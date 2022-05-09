@@ -1,0 +1,24 @@
+*,*::after,*::before {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    transition: .3s ease;
+}
+
+.main {
+    background-image: linear-gradient(to right top, #d16ba5, #c178bf, #aa85d3, #8e93e1, #6d9fe8, #67a9eb, #64b2ec, #66bbec, #7ec7f1, #94d2f5, #aadefa, #bfe9ff);
+}
+
+.container {
+    max-width: calc(1200px + 4%);
+    padding: 2%;
+    margin: auto;
+}
