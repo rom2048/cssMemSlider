@@ -62,4 +62,45 @@ input {
 
 .navigation {
     flex: 1;
+    padding-top: 5%;
+    display: flex;
+    height: fit-content;
+}
+
+.label__container {
+    padding: 1rem;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+}
+
+.label__container:hover label {
+    background: #bfe9ff;
+}
+
+.label__container:active label {
+    background: #94d2f5;
+}
+
+label {
+    width: 5rem;
+}
+
+span {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    background-color: #d16ba5;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#slide_1:checked ~ .slider .label_1 span,
+#slide_2:checked ~ .slider .label_2 span,
+#slide_3:checked ~ .slider .label_3 span,
+#slide_4:checked ~ .slider .label_4 span {
+    background: #aa85d3;
+    transform: scale(.8);
+    border: 2px solid #bfe9ff
 }
