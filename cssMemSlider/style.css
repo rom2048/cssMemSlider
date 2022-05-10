@@ -25,6 +25,7 @@ input {
 
 .slider {
     width: 100%;
+    transition: .3s ease;
 }
 
 .image__container {
@@ -33,6 +34,32 @@ input {
     display: flex;
 }
 
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.slide > img {
+    width: 100%;
+    object-fit: cover;
+}
+
 .additional {
     display: flex;
+}
+
+.text__slider {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+}
+
+.text__slider > p {
+    font-size: 3rem;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.navigation {
+    flex: 1;
 }
