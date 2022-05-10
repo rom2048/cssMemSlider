@@ -5,10 +5,6 @@
 	box-sizing: border-box;
 }
 
-html {
-    font-size: 16px;
-}
-
 body {
     transition: .3s ease;
 }
@@ -18,12 +14,25 @@ body {
 }
 
 .container {
-    max-width: calc(1200px + 4%);
+    max-width: calc(75rem + 4%);
     padding: 2%;
     margin: auto;
 }
 
+input {
+    display: none;
+}
+
 .slider {
     width: 100%;
-    
+}
+
+.image__container {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.additional {
+    display: flex;
 }
