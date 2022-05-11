@@ -24,7 +24,8 @@ input {
 }
 
 .image__container {
-    width: 100%;
+    width: 100.1%;
+    margin: auto;
     overflow: hidden;
     display: flex;
 }
@@ -48,6 +49,7 @@ input {
     flex: 1;
     overflow: hidden;
     display: flex;
+    width: 100%;
 }
 
 .text__slider > p {
@@ -61,6 +63,7 @@ input {
     flex: 1;
     padding-top: 5%;
     display: flex;
+    flex-wrap: wrap;
     height: fit-content;
 }
 
@@ -133,4 +136,21 @@ span {
 #slide_6:checked ~ .slider .slide,
 #slide_6:checked ~ .slider p {
     transform: translateX(-500%);
+}
+
+@media screen and (max-width: 62.813rem) {
+    .additional {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .navigation {
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 47.938rem){
+    .text__slider > p {
+        font-size: 1.5rem;
+    }
 }
